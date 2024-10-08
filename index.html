@@ -135,9 +135,18 @@
         }
 
         // Hanya tampilkan teks bertema "sedih karena cinta"
-        if (result === 6) {
-            textResult.innerText = "Cintaku padamu, .......Hanya sebatas menunggumu";
+        if (result === 0) {
+            textResult.innerText = "Seperti cintaku, kosong tak berbalas...";
+        } else if (result < 2) {
+            textResult.innerText = "Cintaku padamu, .......Hanya sebatas rindu";
+        } else if (result > 100) {
+            textResult.innerText = "Mimpiku terlalu besar, tapi realita tak mengizinkan...";
+        } else if (result === 42) {
+            textResult.innerText = "Jawaban dari segalanya... tapi tidak untuk hatiku.";
+        } else {
+            textResult.innerText = "Semangat yaa teman untuk 6 tahun menunggu, semoga ada yang tertuju";
         }
+
         numberResult.innerText = ''; // Kosongkan angka hasil
     }
 
